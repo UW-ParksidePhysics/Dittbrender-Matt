@@ -1,0 +1,80 @@
+Last login: Thu Feb 13 15:01:20 on ttys001
+maclab-101:~ lucca001$ type type
+type is a shell builtin
+maclab-101:~ lucca001$ type ls
+ls is /bin/ls
+maclab-101:~ lucca001$ pwd
+/Users/lucca001
+maclab-101:~ lucca001$ ls -l
+total 0
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Desktop
+drwx------+  6 lucca001  UWP\Domain Users   192 Feb 13 14:56 Documents
+drwx------+  6 lucca001  UWP\Domain Users   192 Feb 13 14:46 Downloads
+drwx------@ 58 lucca001  UWP\Domain Users  1856 Feb 13 14:59 Library
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Movies
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Music
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Pictures
+drwxr-xr-x+  4 lucca001  UWP\Domain Users   128 Feb  4 14:31 Public
+drwxr-xr-x   4 lucca001  UWP\Domain Users   128 Feb  4 15:02 PycharmProjects
+maclab-101:~ lucca001$ 
+maclab-101:~ lucca001$ type cp
+cp is /bin/cp
+maclab-101:~ lucca001$ which ls
+/bin/ls
+maclab-101:~ lucca001$ which cd
+/usr/bin/cd
+maclab-101:~ lucca001$ help cd
+cd: cd [-L|-P] [dir]
+    Change the current directory to DIR.  The variable $HOME is the
+    default DIR.  The variable CDPATH defines the search path for
+    the directory containing DIR.  Alternative directory names in CDPATH
+    are separated by a colon (:).  A null directory name is the same as
+    the current directory, i.e. `.'.  If DIR begins with a slash (/),
+    then CDPATH is not used.  If the directory is not found, and the
+    shell option `cdable_vars' is set, then try the word as a variable
+    name.  If that variable has a value, then cd to the value of that
+    variable.  The -P option says to use the physical directory structure
+    instead of following symbolic links; the -L option forces symbolic links
+    to be followed.
+maclab-101:~ lucca001$ mkdir --help
+mkdir: illegal option -- -
+usage: mkdir [-pv] [-m mode] directory ...
+maclab-101:~ lucca001$ mkdir --help
+mkdir: illegal option -- -
+usage: mkdir [-pv] [-m mode] directory ...
+maclab-101:~ lucca001$ mkdir --help
+mkdir: illegal option -- -
+usage: mkdir [-pv] [-m mode] directory ...
+maclab-101:~ lucca001$ man ls
+maclab-101:~ lucca001$ man 5 passwd
+maclab-101:~ lucca001$ apropos floppy
+floppy: nothing appropriate
+maclab-101:~ lucca001$ whatis ls
+builtin(1), !(1), %(1), .(1), :(1), @(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), echotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1), filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1), jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1), printenv(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1), settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times(1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), until(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+maclab-101:~ lucca001$ info coreutils
+maclab-101:~ lucca001$ cd /usr; ls; cd -
+bin		libexec		sbin		standalone
+lib		local		share
+/Users/lucca001
+maclab-101:~ lucca001$ type test
+test is a shell builtin
+maclab-101:~ lucca001$ type foo
+-bash: type: foo: not found
+maclab-101:~ lucca001$ alias foo='cd /usr; ls; cd -'
+maclab-101:~ lucca001$ foo
+bin		libexec		sbin		standalone
+lib		local		share
+/Users/lucca001
+maclab-101:~ lucca001$ type foo
+foo is aliased to `cd /usr; ls; cd -'
+maclab-101:~ lucca001$ unalias foo
+maclab-101:~ lucca001$ type foo
+-bash: type: foo: not found
+maclab-101:~ lucca001$ vohfhdofghasdfjeifh
+-bash: vohfhdofghasdfjeifh: command not found
+maclab-101:~ lucca001$ type ls
+ls is hashed (/bin/ls)
+maclab-101:~ lucca001$ alias
+maclab-101:~ lucca001$ alias
+maclab-101:~ lucca001$ 

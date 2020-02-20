@@ -1,0 +1,71 @@
+Last login: Thu Feb 20 15:11:31 on ttys000
+maclab-84:~ dittb001$ ls
+Desktop		Library		Photos		PycharmProjects	ls-error.txt
+Documents	Movies		Pictures	lazy_dog.txt	ls.txt
+Downloads	Music		Public		ls-Output.txt
+maclab-84:~ dittb001$ ls l
+ls: l: No such file or directory
+maclab-84:~ dittb001$ ls ls-Output.txt 
+ls-Output.txt
+maclab-84:~ dittb001$ ls D
+ls: D: No such file or directory
+maclab-84:~ dittb001$ ls D
+ls: D: No such file or directory
+maclab-84:~ dittb001$ ls Do
+ls: Do: No such file or directory
+maclab-84:~ dittb001$ cd
+maclab-84:~ dittb001$ ls 
+Desktop		Library		Photos		PycharmProjects	ls-error.txt
+Documents	Movies		Pictures	lazy_dog.txt	ls.txt
+Downloads	Music		Public		ls-Output.txt
+maclab-84:~ dittb001$ ls Documents/
+Terminal Saved Output
+maclab-84:~ dittb001$ history | less
+maclab-84:~ dittb001$ history | grep /usr/bin
+  158  ls -l /usr/bin > ls-Output.txt
+  164  ls -l /usr/bin>> ls-output.txt
+  165  ls -l /usr/bin>> ls-output.txt
+  166  ls -l /usr/bin>> ls-output.txt
+  167  ls -l /usr/bin>> ls-output.txt
+  182  ls -l /usr/bin | less
+  183  ls /bin /usr/bin | sort | less
+  184  ls /bin /usr/bin | sort | uniq | less
+  185  ls /bin /usr/bin | sort | uniq -d | less
+  187  ls /bin /usr/bin | sort | uniq | wc -l
+  188  ls /bin /usr/bin | sort | uniq | grep zip
+  191  ls /usr/bin > ls-output.txt
+  194  ls /usr/bin | tail -n 5
+  196  ls /usr/bin | tee ls.txt | grep zip
+  283  file $(ls -d /usr/bin/* | grep zip)
+  306  history | grep /usr/bin
+maclab-84:~ dittb001$ !88
+clear
+
+maclab-84:~ dittb001$ history | grep /usr/bin
+  158  ls -l /usr/bin > ls-Output.txt
+  164  ls -l /usr/bin>> ls-output.txt
+  165  ls -l /usr/bin>> ls-output.txt
+  166  ls -l /usr/bin>> ls-output.txt
+  167  ls -l /usr/bin>> ls-output.txt
+  182  ls -l /usr/bin | less
+  183  ls /bin /usr/bin | sort | less
+  184  ls /bin /usr/bin | sort | uniq | less
+  185  ls /bin /usr/bin | sort | uniq -d | less
+  187  ls /bin /usr/bin | sort | uniq | wc -l
+  188  ls /bin /usr/bin | sort | uniq | grep zip
+  191  ls /usr/bin > ls-output.txt
+  194  ls /usr/bin | tail -n 5
+  196  ls /usr/bin | tee ls.txt | grep zip
+  283  file $(ls -d /usr/bin/* | grep zip)
+  306  history | grep /usr/bin
+  308  history | grep /usr/bin
+maclab-84:~ dittb001$ ls -l /usr/bin > ls-output.txt
+maclab-84:~ dittb001$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+

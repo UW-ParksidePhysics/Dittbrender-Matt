@@ -1,0 +1,72 @@
+Last login: Thu Feb 20 14:02:04 on console
+maclab-84:~ dittb001$ file /etc/shadow
+/etc/shadow: cannot open `/etc/shadow' (No such file or directory)
+maclab-84:~ dittb001$ less /etc/shadow
+/etc/shadow: No such file or directory
+maclab-84:~ dittb001$ id
+uid=1411937214(dittb001) gid=1116625352(UWP\Domain Users) groups=1116625352(UWP\Domain Users),12(everyone),62(netaccounts),125416489(UWP\2020-SPRG-PHYS-241-001),573945132(UWP\DL_ALL-ENRL-CUR-TRM_A),1021199557(UWP\2020-SPRG-HESM-156-M51),1179213447(UWP\DL_ALL-ENRL-P2-CUR-F1_A),1436383428(UWP\2019-FALL-MATH-222-001),1494615893(UWP\2019-FALL-PHYS-201-001),1550033489(UWP\2019-FALL-MUSI-100-001),219400799(UWP\DL_ADV-LEWISB),347031999(UWP\2019-SPRG-CHEM-102-001),822665819(UWP\2019-SPRG-GEOS-105-001),884829712(UWP\DL_ALL-EMPL-STUD_A),936947224(UWP\2019-SPRG-MATH-221-001),992068840(UWP\2019-SPRG-CHEM-104-001),1025338767(UWP\2020-SPRG-ENGL-106-002),1032063419(UWP\2019-SUM-MATH-222-M01),1427030562(UWP\Student Users),1564739767(UWP\2020-SPRG-PHYS-202-001),1981629663(UWP\DL_STU-ENRL-CUR-UGRD_A),2124421418(UWP\PSO All Campus),702(com.apple.sharepoint.group.2),701(com.apple.sharepoint.group.1),333250915(UWP\Publisher),376089144(UWP\CTX-Mathematica),1102773013(UWP\Windows Explorer),1535688893(UWP\PS Elements),1953500456(UWP\Parkside-Campus Info-traverse),2110368857(UWP\SSH),178840370(UWP\Internet Explorer),183735245(UWP\Accessories),336527048(UWP\CreativeServices-Public-full),714050089(UWP\InfoPath),739946822(UWP\Notepad_Plus),839023789(UWP\Visio),993404883(UWP\Project),1111887947(UWP\Parkside-Campus Info-Leadership-read),1289955258(UWP\Emergency List),1371522217(UWP\Adobe Reader),1432469368(UWP\Office),1458183425(UWP\Notepad),1875240670(UWP\IBM Director Client),2144369774(UWP\SPSS)
+maclab-84:~ dittb001$ > foo.txt
+maclab-84:~ dittb001$ ls -l foo.txt
+-rw-r--r--  1 dittb001  UWP\Domain Users  0 Feb 20 14:07 foo.txt
+maclab-84:~ dittb001$ chmod 600 foo.txt
+maclab-84:~ dittb001$ rm -f foo.txt
+maclab-84:~ dittb001$ umask
+0022
+maclab-84:~ dittb001$ > foo.txt
+maclab-84:~ dittb001$ ls -l foo.txt
+-rw-r--r--  1 dittb001  UWP\Domain Users  0 Feb 20 14:10 foo.txt
+maclab-84:~ dittb001$ rm foo.txt
+maclab-84:~ dittb001$ umask 0000
+maclab-84:~ dittb001$ > foo.txt
+maclab-84:~ dittb001$ ls -l foo.txt
+-rw-rw-rw-  1 dittb001  UWP\Domain Users  0 Feb 20 14:11 foo.txt
+maclab-84:~ dittb001$ rm foo.txt; umask 0002
+maclab-84:~ dittb001$ su -
+Password:
+su: Sorry
+maclab-84:~ dittb001$ su -c 'ls -l /root/*'
+su: illegal option -- c
+usage: su [-] [-flm] [login [args]]
+maclab-84:~ dittb001$ sudo backup_script
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-84:~ dittb001$ sudo -l
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-84:~ dittb001$ sudo cp myfile.txt ~tony
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+maclab-84:~ dittb001$ > /usr/local/share/Music/test_file
+-bash: /usr/local/share/Music/test_file: No such file or directory
+maclab-84:~ dittb001$ ls -l /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-84:~ dittb001$ umask 0002
+maclab-84:~ dittb001$ passwd
+Changing password for dittb001.
+Old Password:
+New Password:
+Retype New Password:
+passwd: try again
+maclab-84:~ dittb001$ 
+maclab-84:~ dittb001$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+[Process completed]
+

@@ -1,0 +1,32 @@
+Last login: Thu Feb 20 14:23:11 on ttys000
+maclab-84:~ dittb001$ printenv | less
+maclab-84:~ dittb001$ printenv USER
+dittb001
+maclab-84:~ dittb001$ set | less
+maclab-84:~ dittb001$ echo $HOME
+/Users/dittb001
+maclab-84:~ dittb001$ alias
+maclab-84:~ dittb001$ foo="This is some "
+maclab-84:~ dittb001$ echo $foo
+This is some
+maclab-84:~ dittb001$ foo=$foo"text. "
+maclab-84:~ dittb001$ echo $foo
+This is some text.
+maclab-84:~ dittb001$ gedit some_file
+-bash: gedit: command not found
+maclab-84:~ dittb001$ cp .bashrc .bashrc.bak
+cp: .bashrc: No such file or directory
+maclab-84:~ dittb001$ nano .bashrc
+maclab-84:~ dittb001$ source .bashrc
+-bash: .bashrc: No such file or directory
+maclab-84:~ dittb001$ ll
+-bash: ll: command not found
+maclab-84:~ dittb001$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+

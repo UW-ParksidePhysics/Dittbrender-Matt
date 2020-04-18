@@ -1,9 +1,1 @@
-x=640
-i=39.37*x
-print(i,('inches'))
-ft=i/12
-print(ft,('feet'))
-yd=ft/3
-print(yd,('yards'))
-mi=yd/1760
-print(mi,('miles'))
+figure()  #

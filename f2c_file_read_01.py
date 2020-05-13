@@ -1,0 +1,8 @@
+infile = open('temperature.dat', 'r')
+infile.readline()
+infile.readline()
+infile.readline()
+F = float(((infile.readline()).split())[2])
+infile.close()
+C = (5.0/9) * (F - 32)
+print(C)
